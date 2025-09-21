@@ -1,3 +1,9 @@
+# Observar a comunicação entre os nós do turtlesim
+# usando as ferramentas de linha de comando;
+# Escrever um nó em Python que assina o tópico de
+# pose (/turtle1/pose) e imprime a posição e orientação
+# da tartaruga;
+
 from launch import LaunchDescription
 from launch_ros.actions import Node
 

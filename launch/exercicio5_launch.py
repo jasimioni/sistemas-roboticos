@@ -1,7 +1,7 @@
-# Colete os dados do sensor LiDAR, converta em
-# cartesiano e apresente o resultado (plot). Deve ser visto
-# algo como um mapa 2D;
-
+# Faça com que o TurtleBot seja capaz de navegar no
+# ambiente, com uma velocidade fixa definida, desviando
+# de obstáculos de acordo com o que é visto pelo sensor
+# LiDAR;
 
 from launch import LaunchDescription
 from launch_ros.actions import Node
@@ -30,7 +30,7 @@ def generate_launch_description():
         Node(
             package='jasimioni',
             namespace='',
-            executable='lidar_2d_plot',
-            name='lidar_2d_plot'
+            executable='turtlebot_mover',
+            name='turtlebot_mover'
         ),
     ])

@@ -1,3 +1,7 @@
+# Escrever um nó em Python que publica no tópico de
+# velocidade (/turtle1/cmd_vel) para fazer a tartaruga
+# desenhar um quadrado automaticamente;
+
 from launch import LaunchDescription
 from launch_ros.actions import Node
 

@@ -79,8 +79,6 @@ class Lidar2DScanner(Node):
             if math.isinf(distance) or math.isnan(distance):
                 continue
 
-            # Calcula o ângulo para a medição atual
-            # ângulo = ângulo_inicial + (índice_da_leitura * incremento_angular)
             angle = msg.angle_min + i * msg.angle_increment
 
             # Convert to cartesian coordinates
@@ -94,16 +92,6 @@ class Lidar2DScanner(Node):
 
         if points:
             self.visualizer.update_plot(points)
-            #x_vals, y_vals = zip(*points)
-            #plt.figure()
-            #plt.scatter(x_vals, y_vals, s=5)
-            #plt.scatter(0, 0, color='red', marker='^', s=100)
-            #plt.xlabel('X (m)')
-            #plt.ylabel('Y (m)')
-            #plt.title('LIDAR Scan - 2D Coordinates')
-            #plt.axis('equal')
-            #plt.ion()
-
             print(json.dumps(points, indent=2))
 
 

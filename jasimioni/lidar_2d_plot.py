@@ -46,7 +46,7 @@ class LidarVisualizer:
         x_vals, y_vals = zip(*points)
 
         # 4. Plot the new data
-        self.lidar_scatter = self.ax.scatter(x_vals, y_vals, s=5, label='LIDAR Points')
+        self.lidar_scatter = self.ax.scatter(x_vals, y_vals, s=2, color='green', label='LIDAR Points')
 
         # Dynamically adjust plot limits to fit the data, with a margin
         self.ax.set_xlim(min(x_vals) - 0.5, max(x_vals) + 0.5)

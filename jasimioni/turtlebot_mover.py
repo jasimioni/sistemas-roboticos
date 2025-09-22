@@ -82,13 +82,13 @@ class Lidar2DScanner(Node):
         
         if direction == 'front':
             self.get_logger().info('Moving Forward')
-            self.change_velocity(.5, 0.0)
+            self.change_velocity(0.5, 0.0)
         elif direction == 'left':   
             self.get_logger().info('Moving to the Left')
-            self.change_velocity(.5, 1.0)
+            self.change_velocity(0.5, 1.0)
         else:
             self.get_logger().info('Moving to the Right')
-            self.change_velocity(.5, -1.0)
+            self.change_velocity(0.5, -1.0)
         
         
 def main(args=None):

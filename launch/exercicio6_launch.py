@@ -30,7 +30,7 @@ def generate_launch_description():
         Node(
             package='jasimioni',
             namespace='',
-            executable='turtlebot_mover',
-            name='turtlebot_mover'
+            executable='lidar_to_odom',
+            name='lidar_to_odom',
         ),
     ])

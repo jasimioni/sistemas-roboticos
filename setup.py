@@ -28,6 +28,7 @@ setup(
             'move_to_pos = jasimioni.move_to_pos:main',
             'lidar_2d_plot = jasimioni.lidar_2d_plot:main',
             'turtlebot_mover = jasimioni.turtlebot_mover:main',
+            'lidar_to_odom = jasimioni.lidar_to_odom:main',
         ],
     },
 )

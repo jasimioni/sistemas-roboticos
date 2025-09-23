@@ -1,5 +1,9 @@
 ```
-ros2 pkg create --build-type ament_python --license Apache-2.0 jasimioni --maintainer-name "Joao Andre Simioni" --maintainer-email jasimioni@gmail.com --description "Exercícios Sistemas Robóticos Inteligentes" --dependencies rclpy geometry_msgs turtlesim
+ros2 pkg create --build-type ament_python --license Apache-2.0 jasimioni --maintainer-name "Joao Andre Simioni" --maintainer-email jasimioni@gmail.com --description "Exercícios Sistemas Robóticos Inteligentes" --dependencies rclpy geometry_msgs turtlesim math
+```
+
+```
+git clone
 
 colcon build --packages-select jasimioni
 
@@ -11,4 +15,10 @@ ros2 launch jasimioni exercicio2_launch.py
 
 ros2 launch jasimioni exercicio3_launch.py
 ros2 topic pub /turtle1/go_to_position geometry_msgs/Point "{x: 1.0, y: 1.0, z: 0.0}" --once
+
+
+TURTLEBOT3_MODEL=burger ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+
+ros2 topic pub /go_to_position geometry_msgs/Point "{x: 1.0, y: 1.0, z: 0.0}" --once
+
 ```

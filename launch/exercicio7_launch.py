@@ -33,14 +33,8 @@ def generate_launch_description():
         Node(
             package='jasimioni',
             namespace='',
-            executable='lidar_to_odom',
-            name='lidar_to_odom',
+            executable='turtlebot_mover_pid',
+            name='turtlebot_mover_pid',
         ),
         
-        #Node(
-        #    package='jasimioni',
-        #    namespace='',
-        #    executable='turtlebot_mover',
-        #    name='turtlebot_mover'
-        #),
     ])

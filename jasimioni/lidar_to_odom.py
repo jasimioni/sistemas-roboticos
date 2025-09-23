@@ -107,7 +107,7 @@ class LidarOdom2DScanner(Node):
             #transform = self.tf_buffer.lookup_transform(
             #    target_frame,
             #    source_frame,
-            #    rclpy.time.Time(), # <-- Gets the transform at the EXACT time of the scan
+            #    rclpy.time.Time(), 
             #)            
             transform = self.tf_buffer.lookup_transform(
                 target_frame,

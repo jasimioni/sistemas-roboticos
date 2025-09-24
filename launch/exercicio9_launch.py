@@ -1,5 +1,5 @@
-# No Turtlebot3, utiliza o Fuzzy para navegar com o robô até
-# uma posição desejada;
+# No Turtlebot3, utiliza o PID para navegar com o robô até
+# uma posição desejada; Usar Fuzzy para controlar o desvio de obstáculos
 
 from launch import LaunchDescription
 from launch_ros.actions import Node

@@ -1,5 +1,7 @@
-# No Turtlebot3, utiliza o Fuzzy para navegar com o robô até
-# uma posição desejada;
+# Iniciar uma simulação do Gazebo com o Turtlebot3 em um ambiente
+# e iniciar o módulo Nav2 para navegação autônoma 
+# export TURTLEBOT3_MODEL=waffle; ros2 launch nav2_bringup tb3_simulation_launch.py headless:=False
+# Usar o /goal_pose para definir a posição desejada do robô e medir pelo Odom.
 
 from launch import LaunchDescription
 from launch_ros.actions import Node

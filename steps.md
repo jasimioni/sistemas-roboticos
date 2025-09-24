@@ -93,8 +93,19 @@ ros2 topic pub /go_to_position geometry_msgs/Point "{x: 3.0, y: 1.0, z:0.0}" --o
 ### Ex.9
 
 ```
-ros2 launch jasimioni exercicio8_launch.py
+ros2 launch jasimioni exercicio9_launch.py
 
 # Set a desired position:
 ros2 topic pub /go_to_position geometry_msgs/Point "{x: 3.0, y: 1.0, z:0.0}" --once
+```
+
+
+### Ex.10
+
+```
+export TURTLEBOT3_MODEL=waffle; ros2 launch nav2_bringup tb3_simulation_launch.py headless:=False
+
+# Initialize the robot position
+
+ros2 launch jasimioni exercicio10_launch.py
 ```

@@ -32,6 +32,7 @@ setup(
             'turtlebot_mover_pid = jasimioni.turtlebot_mover_pid:main',
             'turtlebot_mover_fuzzy = jasimioni.turtlebot_mover_fuzzy:main',
             'turtlebot_mover_pid_fuzzy = jasimioni.turtlebot_mover_pid_fuzzy:main',
+            'waffer_2_pos = jasimioni.waffer_2_pos:main',
         ],
     },
 )

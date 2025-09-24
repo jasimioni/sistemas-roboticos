@@ -30,6 +30,8 @@ setup(
             'turtlebot_mover = jasimioni.turtlebot_mover:main',
             'lidar_to_odom = jasimioni.lidar_to_odom:main',
             'turtlebot_mover_pid = jasimioni.turtlebot_mover_pid:main',
+            'turtlebot_mover_fuzzy = jasimioni.turtlebot_mover_fuzzy:main',
+            'turtlebot_mover_pid_fuzzy = jasimioni.turtlebot_mover_pid_fuzzy:main',
         ],
     },
 )

@@ -1,4 +1,4 @@
-# No Turtlebot3, utiliza o PID para navegar com o robô até
+# No Turtlebot3, utiliza o Fuzzy para navegar com o robô até
 # uma posição desejada;
 
 from launch import LaunchDescription
@@ -31,8 +31,8 @@ def generate_launch_description():
         Node(
             package='jasimioni',
             namespace='',
-            executable='turtlebot_mover_pid',
-            name='turtlebot_mover_pid',
+            executable='turtlebot_mover_pid_fuzzy',
+            name='turtlebot_mover_pid_fuzzy',
         ),
         
     ])
